@@ -17,6 +17,9 @@ class samba::server::params {
     'Gentoo': { $service_name = 'samba' }
     'Archlinux': { $service_name = 'smbd'
                    $nmbd_name = 'nmbd' }
+    'Suse': {
+      $service_name = 'smb'
+    }
 
     # Currently Gentoo has $::osfamily = "Linux". This should change in
     # Factor 1.7.0 <http://projects.puppetlabs.com/issues/17029>, so
